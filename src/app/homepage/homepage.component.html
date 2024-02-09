@@ -1,0 +1,22 @@
+<div class="section-container">
+    <div class="section section1">Rings<br><span>Discover our exclusive range of diamond rings.</span></div>
+    <div class="section section2">Necklaces<br><span>Explore our elegant diamond necklaces.</span></div>
+    <div class="section section3">Bracelets<br><span>Find the perfect diamond bracelet.</span></div>
+    <div class="section section4">Earrings<br><span>View our stunning collection of diamond earrings.</span></div>
+  </div>
+  
+
+<div class="container">
+    <!-- Big tiles for main categories -->
+    <div class="tile" *ngFor="let category of mainCategories">
+      <img src="{{category.imageUrl}}" alt="{{category.name}}">
+    </div>
+  
+    <!-- Smaller sections for other categories -->
+    <div class="clearfix">
+      <div class="small-tile" *ngFor="let subCategory of subCategories">
+        <img src="{{subCategory.imageUrl}}" alt="{{subCategory.name}}">
+      </div>
+    </div>
+  </div>
+  
